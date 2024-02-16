@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Month Days Counter</title>
+  <style>
+    /* Adding red color for the output */
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  function getDaysInMonth() {
+    var monthInput = prompt("Enter the name of the month (e.g., Jan, Feb, etc.):").toLowerCase();
+
+    // Define arrays for month names and their corresponding days
+    var months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+    var days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    var index = months.indexOf(monthInput);
+
+    if (index !== -1) {
+      var daysCount = days[index];
+      // Display the result in red color
+      document.getElementById('result').innerHTML = "Total number of days in " + monthInput.toUpperCase() + ": <span class='red'>" + daysCount + "</span>";
+    } else {
+      document.getElementById('result').innerHTML = "Invalid month name";
+    }
+  }
+</script>
+
+<button onclick="getDaysInMonth()">Get Days in Month</button>
+<div id="result"></div>
+
+</body>
+</html>
