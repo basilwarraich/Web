@@ -1,10 +1,10 @@
-Week 4 Tasks:
+**Week 4 Tasks:**
 
-Task 1:
+_Task 1:_
 Fiverr Landing page
 ![image](https://github.com/basilwarraich/Web/assets/156110210/3ec4169a-4a64-480b-942a-e65e23e2944a)
 
-Task 2:
+_Task 2:_
 If empty fields
 ![image](https://github.com/basilwarraich/Web/assets/156110210/d48f2e69-26cd-49c6-8efa-a6960d029e98)
 
