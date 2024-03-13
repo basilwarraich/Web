@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Task 8</title>
+
+</head>
+
+<style>
+    .main {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <button>Start Animation</button>
+    <div class="main">
+
+    </div>
+
+    <script>  
+        $ (document).ready(function () {
+            $("button").click(function () {
+                $ (".main").animate({left: "700px", width: "+=250px", height: "+=250px"}, "slow");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
