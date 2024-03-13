@@ -23,3 +23,16 @@ Email validation
 SignUp completed
 
 ![image](https://github.com/basilwarraich/Web/assets/156110210/e6b61ea2-d807-4413-be5e-76f1ced27968)
+
+**Week 5 Tasks:**
+
+_Task4:_
+
+Before:
+
+![image](https://github.com/basilwarraich/Web/assets/156110210/d35bf2ee-cbe2-4388-9e69-a165cb128f93)
+
+After:
+
+![image](https://github.com/basilwarraich/Web/assets/156110210/60960e37-4b19-46fc-b778-0cea966aad39)
+
