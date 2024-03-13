@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <script src="./js3.7.1.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <h2>Click Element to see it's Class and ID</h2>
+    </div>
+    
+    <div class="class1" id="div">Element 1</div>
+    <p class="class2" id="paragraph">Element 2</p>
+    <button class="class3" id="btn">Element 3</button>
+
+    <script>
+        $ (document).ready(function () {
+            $ ("[class]").click(function () {
+                var eleClass = $ (this).attr("class");
+                var eleID = $ (this).attr("id");
+                
+                $ (".main").html("<h3>Class: " + eleClass +"<br>ID: " + eleID + "</h3>");
+            });
+        });
+    </script>
+</body>
+
+</html>
