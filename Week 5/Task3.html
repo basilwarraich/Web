@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <script src="./js3.7.1.js"> </script>
+</head>
+<style>
+    img {
+        height: 600px;
+        width: 800px;
+    }
+    #img-div {
+        height: 600px;
+        width: 800px;
+    }
+
+</style>
+<body>
+    <center>
+        <div class="main">
+            <div id="img-div">
+                <img src="./apples.jpg" alt="Apples">
+            </div>
+            <button id="toggle">Hide</button>
+        </div>
+    </center>
+    <script>
+        $ (document).ready(function() {
+            $ ("#toggle").click(function() {
+                $ ("#img-div").toggle();
+                var btn = ($("#img-div").is(":visible")) ? "Hide" : "Show";
+                $ ("#toggle").text(btn)
+            });
+        });
+    </script>
+
+</body>
+
+</html>
