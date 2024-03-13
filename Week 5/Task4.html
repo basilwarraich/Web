@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <script src="./js3.7.1.js"></script>
+
+</head>
+
+<body>
+
+    <table id="table1" border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Remove Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basil</td>
+                <td><button class="remove">Remove</button></td>
+            </tr>
+            <tr>
+                <td>Usama</td>
+                <td><button class="remove">Remove</button></td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td><button class="remove">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>    
+
+    <script>
+        $ (document).ready(function() {
+            $ (".remove").click(function () {
+                $ (this).closest("tr").remove();
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
