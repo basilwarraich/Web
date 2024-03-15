@@ -12,18 +12,59 @@
 <body>
     <div class="time">
         <div class="hours">
-            <span id="hrs">00</span>
+            <label for="hrs">Hours</label>
+            <div class="hrsT">
+                <span id="hrs">00</span>
+            </div>
         </div>
-        <div class="min">
-            <span id="min">00</span>
+        <div class="mins">
+            <label for="min">Minutes</label>
+            <div class="minT">
+                <span id="min">00</span>
+            </div>
         </div>
-        <div class="sec">
-            <span id="sec">00</span>
-        </div>
+        <div class="secs">
+            <label for="secs">Seconds</label>
+            <div class="secT">
+                <span id="sec">00</span>
+            </div>
+        </div>    
         <div class="period">
-            <span id="per">AM</span>
+            <label for="period">Period</label>
+            <div class="periodT">
+                <span id="per">AM</span>
+            </div>
         </div>
     </div>
+
+<script>
+        $(document).ready(function() {
+    function updateDateTime() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours(),
+            minutes = currentTime.getMinutes(),
+            seconds = currentTime.getSeconds(),
+            period = "AM";
+
+        var hour12 = (hours + 11) % 12 + 1; // for 24 to 12 hour format
+        if (hours >= 12)
+        {
+            period = "PM";
+        }
+        $('#hrs').text(hour12);
+        $('#min').text(minutes);
+        $('#sec').text(seconds);
+        $('#per').text(period);
+    }
+
+    // Initial call to display date and time
+    updateDateTime();
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+
+});
+</script>
 
 </body>
 
